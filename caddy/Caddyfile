@@ -5,6 +5,10 @@
   }
 }
 
+mail.reger.cloud {
+  reverse_proxy localhost:1323
+}
+
 jellyfin.reger.cloud,
 music.reger.cloud {
   reverse_proxy localhost:8096

@@ -1,0 +1,11 @@
+name: alps
+
+services:
+  alps:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ["alps", "jordanreger.com"]
+    container_name: alps
+    restart: unless-stopped
+    network_mode: host

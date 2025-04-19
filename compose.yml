@@ -2,3 +2,4 @@ include:
   - caddy/compose.yml
   - jellyfin/compose.yml
   - immich/compose.yml
+  - alps/compose.yml
