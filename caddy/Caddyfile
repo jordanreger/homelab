@@ -1,4 +1,4 @@
-http://jellyfin.reger.cloud {
+http://jellyfin.reger.cloud, http://music.reger.cloud {
 	reverse_proxy localhost:8096
 }
 
