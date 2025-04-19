@@ -5,16 +5,13 @@
 jellyfin.reger.cloud,
 music.reger.cloud {
   reverse_proxy localhost:8096
-  tls internal
 }
 
 photos.reger.cloud {
   reverse_proxy localhost:2283
-  tls internal
 }
 
 reger.cloud,
 localhost {
   respond "cloud"
-  tls internal
 }
