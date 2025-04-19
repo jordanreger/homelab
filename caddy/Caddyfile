@@ -1,13 +1,20 @@
-http://jellyfin.reger.cloud,
-http://music.reger.cloud {
+{
+  email mail@jordanreger.com
+}
+
+jellyfin.reger.cloud,
+music.reger.cloud {
   reverse_proxy localhost:8096
+  tls internal
 }
 
-http://photos.reger.cloud {
+photos.reger.cloud {
   reverse_proxy localhost:2283
+  tls internal
 }
 
-http://reger.cloud,
-http://localhost {
+reger.cloud,
+localhost {
   respond "cloud"
+  tls internal
 }
