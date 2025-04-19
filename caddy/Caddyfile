@@ -1,9 +1,13 @@
 http://jellyfin.reger.cloud,
 http://music.reger.cloud {
-	reverse_proxy localhost:8096
+  reverse_proxy localhost:8096
+}
+
+http://photos.reger.cloud {
+  reverse_proxy localhost:2283
 }
 
 http://reger.cloud,
 http://localhost {
-	respond "cloud"
+  respond "cloud"
 }
