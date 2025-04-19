@@ -1,31 +1,9 @@
-#networks:
-#  tailscale:
-#    driver: bridge
-
 services:
-#  tailscale:
-#  image: tailscale/tailscale:latest
-#  container_name: tailscale
-#  restart: unless-stopped
-#  network_mode: host
-#  volumes:
-#   - ./tailscale/state:/var/lib/tailscale
-#   - /dev/net/tun:/dev/net/tun
-#  cap_add:
-#   - NET_ADMIN
-#   - SYS_MODULE
-#  environment:
-#   TS_AUTHKEY: ${TS_AUTHKEY} 
-#   TS_EXTRA_ARGS: --advertise-tags=tag:container
-
   caddy:
     image: caddy:latest
     container_name: caddy
     restart: unless-stopped
     network_mode: host
-    ports:
-      - "80:80"
-      - "443:443"
     volumes:
       - ./caddy/Caddyfile:/etc/caddy/Caddyfile
       - ./caddy/data:/data
@@ -39,9 +17,10 @@ services:
     volumes:
       - ./jellyfin/config:/config
       - ./jellyfin/cache:/cache
-      - media:/srv/media
+      - /srv/music:/srv/music
     environment:
       TZ: America/New_York
 
 volumes:
   media:
+

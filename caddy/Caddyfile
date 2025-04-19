@@ -1,7 +1,7 @@
-http://jellyfin.inspiron-1.tail8c4e62.ts.net {
-  reverse_proxy jellyfin:8096
+http://jellyfin.reger.cloud {
+	reverse_proxy localhost:8096
 }
 
-http://inspiron-1.tail8c4e62.ts.net {
-  respond "cloud"
+http://reger.cloud {
+	respond "cloud"
 }
