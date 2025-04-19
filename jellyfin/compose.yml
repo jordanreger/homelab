@@ -1,0 +1,18 @@
+name: jellyfin
+
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:latest
+    container_name: jellyfin
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - cache:/cache
+      - config:/config
+      - /srv/music:/srv/music
+    environment:
+      TZ: America/New_York
+volumes:
+  cache:
+  config:
+

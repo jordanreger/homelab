@@ -1,26 +1,4 @@
-services:
-  caddy:
-    image: caddy:latest
-    container_name: caddy
-    restart: unless-stopped
-    network_mode: host
-    volumes:
-      - ./caddy/Caddyfile:/etc/caddy/Caddyfile
-      - ./caddy/data:/data
-      - ./caddy/config:/config
-
-  jellyfin:
-    image: jellyfin/jellyfin:latest
-    container_name: jellyfin
-    restart: unless-stopped
-    network_mode: host
-    volumes:
-      - ./jellyfin/config:/config
-      - ./jellyfin/cache:/cache
-      - /srv/music:/srv/music
-    environment:
-      TZ: America/New_York
-
-volumes:
-  media:
-
+include:
+  - caddy/compose.yml
+  - jellyfin/compose.yml
+  - immich/compose.yml
