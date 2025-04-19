@@ -2,7 +2,9 @@ name: caddy
 
 services:
   caddy:
-    image: caddy:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: caddy
     restart: unless-stopped
     network_mode: host
@@ -10,6 +12,8 @@ services:
       - ./Caddyfile:/etc/caddy/Caddyfile
       - data:/data
       - config:/config
+    env_file:
+      - .env
 volumes:
   data:
   config:
