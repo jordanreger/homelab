@@ -20,5 +20,5 @@ photos.reger.cloud {
 
 reger.cloud,
 localhost {
-  respond "cloud"
+  reverse_proxy localhost:8080
 }
