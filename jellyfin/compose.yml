@@ -12,6 +12,11 @@ services:
       - /srv/music:/srv/music
     environment:
       TZ: America/New_York
+    labels:
+      glance.name: Jellyfin
+      glance.icon: si:jellyfin
+      glance.url: https://music.reger.cloud
+      glance.id: jellyfin
 volumes:
   cache:
   config:
