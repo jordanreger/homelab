@@ -36,6 +36,16 @@ pages:
         widgets:          
           - type: search
             search-engine: https://kagi.com/search?q={QUERY}
+          
+          - type: bookmarks
+            groups:
+          - links:
+              - title: Mail
+                url: https://mail.reger.cloud
+              - title: Music
+                url: https://music.reger.cloud
+              - title: Photos
+                url: https://photos.reger.cloud
 
           - type: rss
             limit: 20
