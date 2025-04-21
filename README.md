@@ -1,6 +1,5 @@
-# Homelab
-
-This repository consists of a few services' configurations and the Docker Compose files to run them. It is intended to be run once and forgotten about.
+This repository consists of a few services' configurations and the Docker 
+Compose files to run them. It is intended to be run once and forgotten about.
 
 ## Installation
 
@@ -31,7 +30,9 @@ docker compose up -d
 
 ## Other configuration
 
-To be able to use a custom domain for all my services, I've configured `caddy` to use Porkbun's API and set some specific records to allow for near-automatic service creation.
+To be able to use a custom domain for all my services, I've configured `caddy` 
+to use Porkbun's API and set some specific records to allow for near-automatic 
+service creation.
 
 ## Screenshots 
 
