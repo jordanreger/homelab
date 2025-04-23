@@ -54,6 +54,7 @@ pages:
               - url: https://drewdevault.com/blog/index.xml
               - url: https://sourcehut.org/blog/index.xml
               - url: https://go.dev/blog/feed.atom
+              - url: https://alpinelinux.org/atom.xml
         
           - type: videos
             style: grid-cards
