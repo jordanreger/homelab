@@ -18,6 +18,10 @@ photos.reger.cloud {
   reverse_proxy localhost:2283
 }
 
+coder.reger.cloud {
+  reverse_proxy localhost:7080
+}
+
 reger.cloud,
 localhost {
   reverse_proxy localhost:8080
