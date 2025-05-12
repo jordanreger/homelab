@@ -17,6 +17,11 @@ services:
     depends_on:
       coder-database:
         condition: service_healthy
+    labels:
+      glance.name: Coder
+      glance.icon: si:coder
+      glance.url: https://code.reger.cloud
+      glance.id: coder
 
   coder-database:
     image: postgres:16
@@ -38,6 +43,9 @@ services:
       interval: 5s
       timeout: 5s
       retries: 5
+    labels:
+      glance.parent: coder
+      glance.name: DB
 
 volumes:
   coder_data:
