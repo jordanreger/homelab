@@ -22,6 +22,10 @@ code.reger.cloud, *.code.reger.cloud {
   reverse_proxy localhost:7080
 }
 
+spc.reger.cloud {
+  reverse_proxy localhost:1324
+}
+
 reger.cloud,
 localhost {
   reverse_proxy localhost:8080

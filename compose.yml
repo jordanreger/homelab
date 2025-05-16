@@ -5,3 +5,4 @@ include:
   - immich/compose.yml
   - alps/compose.yml
   - coder/compose.yml
+  - weather-dashboard/compose.yml

@@ -1,0 +1,11 @@
+name: weather-dashboard
+
+services:
+  alps:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ["weather-dashboard"]
+    container_name: weather-dashboard
+    restart: unless-stopped
+    network_mode: host
